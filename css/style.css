@@ -153,6 +153,10 @@
   color: var(--color-green);
 }
 
+.footer-div {
+  position: relative;
+}
+
 .footer-div .fab {
   padding: 5px;
   border: 2px solid rgb(88, 88, 88);
@@ -163,9 +167,8 @@
   transform: rotate(45deg);
   color: var(--color-green);
   position: absolute;
-  right: 10px;
-  top: -44px;
-  right: -360px;
+  right: 12px;
+  top: -28px;
   width: 55px;
   height: 55px;
 }
