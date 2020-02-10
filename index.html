@@ -6,16 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home - Hunter Agency</title>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
@@ -70,13 +62,13 @@
                     id="navbarNavAltMarkup"
                   >
                     <div class="navbar-nav">
-                      <a class="nav-item nav-link active" href="#">HOME</a>
-                      <a class="nav-item nav-link" href="#">ABOUT</a>
-                      <a class="nav-item nav-link" href="#">SERVICE</a>
-                      <a class="nav-item nav-link" href="#">TEAM</a>
-                      <a class="nav-item nav-link" href="#">TESTIMONIAL</a>
-                      <a class="nav-item nav-link" href="#">BLOG</a>
-                      <a class="nav-item nav-link" href="#">CONTACT</a>
+                      <a class="nav-item nav-link active" href="#topdiv">HOME</a>
+                      <a class="nav-item nav-link" href="#aboutdiv">ABOUT</a>
+                      <a class="nav-item nav-link" href="#servicediv">SERVICE</a>
+                      <a class="nav-item nav-link" href="#teamdiv">TEAM</a>
+                      <a class="nav-item nav-link" href="#testimonialdiv">TESTIMONIAL</a>
+                      <a class="nav-item nav-link" href="#blogdiv">BLOG</a>
+                      <a class="nav-item nav-link" href="#contactdiv">CONTACT</a>
                     </div>
                   </div>
                 </nav>
@@ -103,7 +95,7 @@
     </div>
 
     <!-- about div STARTS -->
-    <div class="container py-5 my-5">
+    <div id="aboutdiv" class="container py-5 my-5">
       <div class="row">
         <div class="col-md-7">
           <span class="font-weight-bolder h1 d-block">OUR STORY</span>
@@ -130,7 +122,7 @@
     <!-- about div ENDS -->
 
     <!-- service div STARTS -->
-    <div class="container-fluid my-5 pt-5 bg-light">
+    <div id="servicediv" class="container-fluid my-5 pt-5 bg-light">
       <div class="container my-5">
         <div class="row text-center">
           <div class="col">
@@ -218,7 +210,7 @@
     <!-- service div ENDS -->
 
     <!-- team div STARTS -->
-    <div class="container-fluid">
+    <div id="teamdiv" class="container-fluid">
       <div class="container my-5 py-5">
         <div class="row text-center">
           <div class="col">
@@ -265,11 +257,7 @@
           </div>
           <div class="col-md-3 my-5">
             <div class="team-card p-3">
-              <img
-                src="img/men-min.jpg"
-                class="rounded-circle"
-                alt="member3"
-              />
+              <img src="img/men-min.jpg" class="rounded-circle" alt="member3" />
               <div class="team-card-body pt-3">
                 <span class="font-weight-bold h5">JOHN DOE</span>
                 <h6>DEVELOPER</h6>
@@ -326,7 +314,7 @@
     <!-- team div ENDS -->
 
     <!-- testimonial STARTS -->
-    <div class="container-fluid py-5 my-5">
+    <div id="testimonialdiv" class="container-fluid py-5 my-5">
       <div class="container text-center testimonial-div">
         <div class="row text-center">
           <div class="col">
@@ -340,10 +328,14 @@
         <div class="row py-4">
           <div class="col">
             <button class="btn text-dark bg-green">ALL</button
-            ><button class="btn border text-dark">Design</button
-            ><button class="btn border text-dark">Developement</button
-            ><button class="btn border text-dark">Photography</button
-            ><button class="btn border text-dark">Animation</button>
+            ><button class="btn border text-dark on-hover-green">Design</button
+            ><button class="btn border text-dark on-hover-green">
+              Developement</button
+            ><button class="btn border text-dark on-hover-green">
+              Photography</button
+            ><button class="btn border text-dark on-hover-green">
+              Animation
+            </button>
           </div>
         </div>
         <div class="row row-cols-md-3 no-gutters">
@@ -399,64 +391,209 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 text-center text-md-left">
-            <div class="row review-card">
-              <div class="col my-5 mx-2 p-3 border">
-                <div class="row">
-                  <div class="col-md-3 border-right">
-                    <img
-                      src="img/men-min.jpg"
-                      class="rounded-circle"
-                      alt="client1"
-                    />
-                    <img src="img/signature.png" alt="sign" />
+          <div class="col">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="text-center carousel-indicators">
+                <span
+                  data-target="#carouselExampleSlidesOnly"
+                  data-slide-to="0"
+                  class="page mx-1 border rounded-circle active"
+                  >&emsp;&ensp;</span
+                >
+                <span
+                  data-target="#carouselExampleSlidesOnly"
+                  data-slide-to="1"
+                  class="page mx-1 border rounded-circle"
+                  >&emsp;&ensp;</span
+                >
+                <span
+                  data-target="#carouselExampleSlidesOnly"
+                  data-slide-to="2"
+                  class="page mx-1 border rounded-circle"
+                  >&emsp;&ensp;</span
+                >
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                      <div class="row review-card">
+                        <div class="col">
+                          <div class="row my-5 mx-1 py-3 border">
+                            <div class="col-md-3 border-right">
+                              <img
+                                src="img/men-min.jpg"
+                                class="rounded-circle"
+                                alt="client1"
+                              />
+                              <img src="img/signature.png" alt="sign" />
+                            </div>
+                            <div class="col-md-9">
+                              <p>
+                                If you want to work with us, please click below
+                                button to contact us.
+                              </p>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                      <div class="row review-card">
+                        <div class="col">
+                          <div class="row my-5 mx-1 py-3 border">
+                            <div class="col-md-3 border-right">
+                              <img
+                                src="img/women-min.jpg"
+                                class="rounded-circle"
+                                alt="client1"
+                              />
+                              <img src="img/signature.png" alt="sign" />
+                            </div>
+                            <div class="col-md-9">
+                              <p>
+                                If you want to work with us, please click below
+                                button to contact us.
+                              </p>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-9">
-                    <p>
-                      If you want to work with us, please click below button to
-                      contact us.
-                    </p>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                      <div class="row review-card">
+                        <div class="col">
+                          <div class="row my-5 mx-1 py-3 border">
+                            <div class="col-md-3 border-right">
+                              <img
+                                src="img/men-min.jpg"
+                                class="rounded-circle"
+                                alt="client1"
+                              />
+                              <img src="img/signature.png" alt="sign" />
+                            </div>
+                            <div class="col-md-9">
+                              <p>
+                                If you want to work with us, please click below
+                                button to contact us.
+                              </p>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                      <div class="row review-card">
+                        <div class="col">
+                          <div class="row my-5 mx-1 py-3 border">
+                            <div class="col-md-3 border-right">
+                              <img
+                                src="img/women-min.jpg"
+                                class="rounded-circle"
+                                alt="client1"
+                              />
+                              <img src="img/signature.png" alt="sign" />
+                            </div>
+                            <div class="col-md-9">
+                              <p>
+                                If you want to work with us, please click below
+                                button to contact us.
+                              </p>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                      <div class="row review-card">
+                        <div class="col">
+                          <div class="row my-5 mx-1 py-3 border">
+                            <div class="col-md-3 border-right">
+                              <img
+                                src="img/men-min.jpg"
+                                class="rounded-circle"
+                                alt="client1"
+                              />
+                              <img src="img/signature.png" alt="sign" />
+                            </div>
+                            <div class="col-md-9">
+                              <p>
+                                If you want to work with us, please click below
+                                button to contact us.
+                              </p>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                      <div class="row review-card">
+                        <div class="col">
+                          <div class="row my-5 mx-1 py-3 border">
+                            <div class="col-md-3 border-right">
+                              <img
+                                src="img/women-min.jpg"
+                                class="rounded-circle"
+                                alt="client1"
+                              />
+                              <img src="img/signature.png" alt="sign" />
+                            </div>
+                            <div class="col-md-9">
+                              <p>
+                                If you want to work with us, please click below
+                                button to contact us.
+                              </p>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                              <span class="fas fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 text-center text-md-left">
-            <div class="row review-card">
-              <div class="col my-5 mx-2 p-3 border">
-                <div class="row">
-                  <div class="col-md-3 border-right">
-                    <img
-                      src="img/women-min.jpg"
-                      class="rounded-circle"
-                      alt="client1"
-                    />
-                    <img src="img/signature.png" alt="sign" />
-                  </div>
-                  <div class="col-md-9">
-                    <p>
-                      If you want to work with us, please click below button to
-                      contact us.
-                    </p>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 text-center">
-            <span class="page rounded-circle active">&emsp;&nbsp;</span>
-            <span class="page border rounded-circle">&emsp;&nbsp;</span>
-            <span class="page border rounded-circle">&emsp;&nbsp;</span>
           </div>
         </div>
       </div>
@@ -471,7 +608,7 @@
     <!-- testimonial ENDS -->
 
     <!-- blog STARTS -->
-    <div class="container my-5 py-5">
+    <div id="blogdiv" class="container my-5 py-5">
       <div class="row text-center">
         <div class="col">
           <span class="font-weight-bolder h1 d-block">LATEST NEWS</span>
@@ -483,7 +620,7 @@
       </div>
       <div class="row blog-div">
         <div class="col-md-4">
-          <div class="my-5 shadow">
+          <div class="my-5 shadow news-card">
             <img src="img/news1-min.jpg" class="w-100" alt="news1" />
             <div
               class="date bg-green p-3 text-white font-weight-bolder text-center"
@@ -507,7 +644,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="my-5 shadow">
+          <div class="my-5 shadow news-card">
             <img src="img/news2-min.jpg" class="w-100" alt="news1" />
             <div
               class="date bg-green p-3 text-white font-weight-bolder text-center"
@@ -531,7 +668,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="my-5 shadow">
+          <div class="my-5 shadow news-card">
             <img src="img/news3-min.jpg" class="w-100" alt="news1" />
             <div
               class="date bg-green p-3 text-white font-weight-bolder text-center"
@@ -655,47 +792,147 @@
 
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-2">
-          <img
-            src="img/service1.png"
-            class="w-100 h-100 p-3 border"
-            alt="service1"
-          />
-        </div>
-        <div class="col-md-2">
-          <img
-            src="img/service2.png"
-            class="w-100 h-100 p-3 border"
-            alt="service2"
-          />
-        </div>
-        <div class="col-md-2">
-          <img
-            src="img/service3.png"
-            class="w-100 h-100 p-3 border"
-            alt="service3"
-          />
-        </div>
-        <div class="col-md-2">
-          <img
-            src="img/service4.png"
-            class="w-100 h-100 p-3 border"
-            alt="service4"
-          />
-        </div>
-        <div class="col-md-2">
-          <img
-            src="img/service5.png"
-            class="w-100 h-100 p-3 border"
-            alt="service5"
-          />
-        </div>
-        <div class="col-md-2">
-          <img
-            src="img/service6.png"
-            class="w-100 h-100 p-3 border"
-            alt="service6"
-          />
+        <div class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    src="img/service1.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service1"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service2.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service2"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service3.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service3"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service4.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service4"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service5.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service5"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service6.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service6"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    src="img/service1.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service1"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service2.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service2"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service3.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service3"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service4.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service4"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service5.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service5"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service6.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service6"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    src="img/service1.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service1"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service2.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service2"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service3.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service3"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service4.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service4"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service5.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service5"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    src="img/service6.png"
+                    class="w-100 h-100 p-3 border"
+                    alt="service6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -717,7 +954,7 @@
     <!-- blog ENDS -->
 
     <!-- contactus STARTS -->
-    <div class="container py-5 my-5">
+    <div id="contactdiv" class="container py-5 my-5">
       <div class="row text-center">
         <div class="col">
           <h1>CONTACT US</h1>
@@ -829,8 +1066,19 @@
           </div>
         </div>
       </div>
-      <div class="goto"><a href="#topdiv" class="stretched-link"></a></div>
+      <div class="goto">
+        <a href="#topdiv" class="stretched-link"
+          ><i class="fas fa-angle-double-up fa-2x"></i
+        ></a>
+      </div>
     </div>
     <!-- footer ENDS -->
   </body>
+  <script src="js/jquery-min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(".carousel").carousel({
+      interval: 2000
+    });
+  </script>
 </html>

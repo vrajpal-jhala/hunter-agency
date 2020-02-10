@@ -7,7 +7,7 @@
   color: var(--color-green);
 }
 
-.bg-green {
+.bg-green, .on-hover-green:hover {
   background-color: var(--color-green);
 }
 
@@ -45,7 +45,12 @@
   padding: 10px 30px;
 }
 
-.nav-link.active {
+.btn:focus{
+  box-shadow: none;
+}
+
+.nav-link.active, .nav-link:hover {
+  opacity: 1!important;
   border-bottom: 2px solid var(--color-green);
 }
 
@@ -59,6 +64,7 @@
 .project-banner {
   background: url("../img/header.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .project-banner > button {
@@ -91,13 +97,17 @@
   border: 3px solid lightgray;
   display: block;
   margin: 0px auto;
-  width: 7em;
-  height: 7em;
+  width: 6.5em;
+  height: 6.5em;
 }
 
 .review-card img:nth-child(2) {
   width: 7em;
   height: 3em;
+}
+
+.page{
+  cursor: pointer;
 }
 
 .page.active {
@@ -109,9 +119,18 @@
   color: var(--color-green);
 }
 
+.news-card{
+  position: relative;
+  transition: all 0.3s;
+}
+
+.news-card:hover{
+  transform: scale(1.1);
+}
+
 .date {
   position: absolute;
-  top: 48px;
+  top: 0px;
 }
 
 .package-feature {
@@ -171,4 +190,12 @@
   top: -28px;
   width: 55px;
   height: 55px;
+}
+
+.goto .fas {
+  color: var(--color-green);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 15%;
+  left: 20%;
 }
