@@ -26,7 +26,7 @@
 }
 
 .home-div {
-  background-image: url("../img/quote.jpg");
+  background-image: url("../img/quote-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,7 +62,7 @@
 }
 
 .project-banner {
-  background: url("../img/header.jpg");
+  background: url("../img/header-min.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -82,7 +82,7 @@
 }
 
 .stats-banner {
-  background: url("../img/work-together.jpg");
+  background: url("../img/work-together-min.jpg");
 }
 
 .stats-banner h1 {
@@ -90,7 +90,7 @@
 }
 
 .contactus-banner {
-  background: url("../img/header.jpg");
+  background: url("../img/header-min.jpg");
 }
 
 .review-card img:first-child {
@@ -150,7 +150,7 @@
 }
 
 .quote-banner {
-  background: url("../img/header.jpg");
+  background: url("../img/header-min.jpg");
 }
 
 .contact-list {

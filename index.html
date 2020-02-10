@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a website of hunter agency. It is a single page website."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home - Hunter Agency</title>
@@ -62,13 +66,21 @@
                     id="navbarNavAltMarkup"
                   >
                     <div class="navbar-nav">
-                      <a class="nav-item nav-link active" href="#topdiv">HOME</a>
+                      <a class="nav-item nav-link active" href="#topdiv"
+                        >HOME</a
+                      >
                       <a class="nav-item nav-link" href="#aboutdiv">ABOUT</a>
-                      <a class="nav-item nav-link" href="#servicediv">SERVICE</a>
+                      <a class="nav-item nav-link" href="#servicediv"
+                        >SERVICE</a
+                      >
                       <a class="nav-item nav-link" href="#teamdiv">TEAM</a>
-                      <a class="nav-item nav-link" href="#testimonialdiv">TESTIMONIAL</a>
+                      <a class="nav-item nav-link" href="#testimonialdiv"
+                        >TESTIMONIAL</a
+                      >
                       <a class="nav-item nav-link" href="#blogdiv">BLOG</a>
-                      <a class="nav-item nav-link" href="#contactdiv">CONTACT</a>
+                      <a class="nav-item nav-link" href="#contactdiv"
+                        >CONTACT</a
+                      >
                     </div>
                   </div>
                 </nav>
@@ -113,7 +125,7 @@
           </button>
         </div>
         <div class="col-md-5">
-          <video width="100%" controls>
+          <video width="100%" preload="none" controls>
             <source src="vid/about-video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -243,6 +255,7 @@
             <div class="team-card p-3">
               <img
                 src="img/women-min.jpg"
+                loading="lazy"
                 class="rounded-circle"
                 alt="member2"
               />
@@ -271,6 +284,7 @@
             <div class="team-card p-3">
               <img
                 src="img/women-min.jpg"
+                loading="lazy"
                 class="rounded-circle"
                 alt="member4"
               />
@@ -454,6 +468,7 @@
                             <div class="col-md-3 border-right">
                               <img
                                 src="img/women-min.jpg"
+                                loading="lazy"
                                 class="rounded-circle"
                                 alt="client1"
                               />
@@ -512,6 +527,7 @@
                             <div class="col-md-3 border-right">
                               <img
                                 src="img/women-min.jpg"
+                                loading="lazy"
                                 class="rounded-circle"
                                 alt="client1"
                               />
@@ -570,6 +586,7 @@
                             <div class="col-md-3 border-right">
                               <img
                                 src="img/women-min.jpg"
+                                loading="lazy"
                                 class="rounded-circle"
                                 alt="client1"
                               />
@@ -965,6 +982,7 @@
         <div class="col-md-6">
           <div class="row mb-3">
             <div class="col">
+              <label for="name" class="sr-only">Name</label>
               <input
                 type="text"
                 name="name"
@@ -974,6 +992,7 @@
               />
             </div>
             <div class="col">
+              <label for="email" class="sr-only">Email</label>
               <input
                 type="email"
                 name="email"
@@ -984,6 +1003,7 @@
             </div>
           </div>
           <div class="row mb-3">
+            <label for="phone" class="sr-only">Phone</label>
             <div class="col">
               <input
                 type="text"
@@ -994,6 +1014,7 @@
               />
             </div>
             <div class="col">
+              <label for="service" class="sr-only">Service</label>
               <input
                 type="text"
                 name="service"
@@ -1005,6 +1026,7 @@
           </div>
           <div class="row mb-3">
             <div class="col">
+              <label for="message" class="sr-only">Message</label>
               <textarea
                 class="form-control rounded-0"
                 name="message"
@@ -1068,8 +1090,9 @@
       </div>
       <div class="goto">
         <a href="#topdiv" class="stretched-link"
-          ><i class="fas fa-angle-double-up fa-2x"></i
-        ></a>
+          ><i class="fas fa-angle-double-up fa-2x"></i>
+          <span class="sr-only">TOP</span></a
+        >
       </div>
     </div>
     <!-- footer ENDS -->
