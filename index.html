@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <div id="topdiv" class="container-fluid home-div vh-100">
@@ -40,18 +40,24 @@
 
       <!-- navbar STARTS -->
       <div class="row bg-dark-grey transparent-sm-50 mt-md-4">
-        <div class="col">
+        <div class="col p-2 p-md-0">
           <div class="container-md">
             <div class="row">
               <div class="col">
                 <nav
-                  class="navbar navbar-expand-md navbar-dark p-0 align-items-stretch"
+                  class="navbar small navbar-expand-md navbar-dark p-0 align-items-stretch"
                 >
-                  <a href="#" class="navbar-brand py-0 col-auto col-md-2"
-                    ><span class="color-green h1">H</span>hunter</a
+                  <a
+                    href="#"
+                    class="navbar-brand py-1 align-center col-auto col-md-2"
+                    ><span
+                      class="color-green h1 font-weight-bolder montserrat-900"
+                      >H</span
+                    >
+                    hunter</a
                   >
                   <button
-                    class="navbar-toggler"
+                    class="navbar-toggler border-0"
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarNavAltMarkup"
@@ -59,27 +65,33 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="fas fa-bars color-green"></span>
                   </button>
                   <div
-                    class="collapse col-auto col-md-10 justify-content-end navbar-collapse"
+                    class="collapse col-auto col-md-10 justify-content-end align-items-stretch navbar-collapse"
                     id="navbarNavAltMarkup"
                   >
-                    <div class="navbar-nav">
+                    <div class="navbar-nav montserrat">
                       <a class="nav-item nav-link active" href="#topdiv"
-                        >HOME</a
+                        ><span>HOME</span></a
                       >
-                      <a class="nav-item nav-link" href="#aboutdiv">ABOUT</a>
+                      <a class="nav-item nav-link" href="#aboutdiv"
+                        ><span>ABOUT</span></a
+                      >
                       <a class="nav-item nav-link" href="#servicediv"
-                        >SERVICE</a
+                        ><span>SERVICE</span></a
                       >
-                      <a class="nav-item nav-link" href="#teamdiv">TEAM</a>
+                      <a class="nav-item nav-link" href="#teamdiv"
+                        ><span>TEAM</span></a
+                      >
                       <a class="nav-item nav-link" href="#testimonialdiv"
-                        >TESTIMONIAL</a
+                        ><span>TESTIMONIAL</span></a
                       >
-                      <a class="nav-item nav-link" href="#blogdiv">BLOG</a>
+                      <a class="nav-item nav-link" href="#blogdiv"
+                        ><span>BLOG</span></a
+                      >
                       <a class="nav-item nav-link" href="#contactdiv"
-                        >CONTACT</a
+                        ><span>CONTACT</span></a
                       >
                     </div>
                   </div>
@@ -94,13 +106,15 @@
       <!-- home div STARTS -->
       <div class="row text-white text-center">
         <div class="col welcome-div">
-          <span class="font-weight-bolder h1">Welcome To Hunter Agency</span>
+          <span class="font-weight-bolder h1 montserrat-900"
+            >Welcome To Hunter Agency</span
+          >
           <p class="mt-3">
             This is a secondary text, you can write whatever you want,<br />
             it will display on the home page.
           </p>
-          <button class="btn btn-outline-light">ABOUT US</button>
-          <button class="btn text-white bg-green">CONTACT US</button>
+          <button class="btn btn-outline-light mt-0">ABOUT US</button>
+          <button class="btn text-white bg-green mt-0">CONTACT US</button>
         </div>
       </div>
       <!-- home div ENDS -->
@@ -110,7 +124,9 @@
     <div id="aboutdiv" class="container py-5 my-5">
       <div class="row">
         <div class="col-md-7">
-          <span class="font-weight-bolder h1 d-block">OUR STORY</span>
+          <span class="h2 d-block montserrat-900 letter-spacing-2"
+            >OUR STORY</span
+          >
           <span
             >A card is a flexible and extensible content container. It includes
             options for headers and footers, a wide variety of content,
@@ -118,14 +134,20 @@
             you’re familiar with Bootstrap 3, cards replace our old panels,
             wells, and thumbnails. Similar functionality to those components is
             available as modifier classes for cards.</span
+          ><span class="my-2 d-block">
+            Cards replace our old panels, wells, and thumbnails. Similar
+            functionality to those components is available as modifier classes
+            for cards.</span
           >
-          <br />
-          <button class="btn bg-dark-grey text-white rounded-0 mx-0">
-            READ MORE
-          </button>
+          <div class="d-block text-center text-md-left">
+            <button class="btn bg-dark-grey text-white rounded-0 mx-0">
+              READ MORE
+            </button>
+          </div>
         </div>
         <div class="col-md-5">
-          <video width="100%" preload="none" controls>
+          <i class="fas fa-play-circle fa-3x"></i>
+          <video width="100%" height="100%" class="bg-dark-grey">
             <source src="vid/about-video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -138,7 +160,7 @@
       <div class="container my-5">
         <div class="row text-center">
           <div class="col">
-            <span class="font-weight-bolder h1 d-block">WHAT WE PROVIDE</span>
+            <span class="h3 mb-0 montserrat-600 d-block">WHAT WE PROVIDE</span>
             <span
               >This is a discription of main heading, you can write whaterver
               you want.</span
@@ -148,7 +170,7 @@
         <div class="row justify-content-between">
           <div class="col-md-4 px-5 my-5">
             <h4 class="fab fa-html5"></h4>
-            <h4>WEB-DESIGN</h4>
+            <span class="h5 d-block montserrat-600">WEB-DESIGN</span>
             <span
               >A card is a flexible and extensible content container. It
               includes options for headers and footers, a wide variety of
@@ -158,7 +180,7 @@
           </div>
           <div class="col-md-4 px-5 my-5">
             <h4 class="fas fa-code"></h4>
-            <h4>WEB-DEVELOPEMENT</h4>
+            <span class="h5 d-block montserrat-600">WEB-DEVELOPEMENT</span>
             <span
               >A card is a flexible and extensible content container. It
               includes options for headers and footers, a wide variety of
@@ -168,7 +190,7 @@
           </div>
           <div class="col-md-4 px-5 my-5">
             <h4 class="fas fa-bullhorn"></h4>
-            <h4>DIGITAL MARKETING</h4>
+            <span class="h5 d-block montserrat-600">DIGITAL MARKETING</span>
             <span
               >A card is a flexible and extensible content container. It
               includes options for headers and footers, a wide variety of
@@ -178,7 +200,7 @@
           </div>
           <div class="col-md-4 px-5 my-5">
             <h4 class="fas fa-cloud-download-alt"></h4>
-            <h4>WEB-HOSTING</h4>
+            <span class="h5 d-block montserrat-600">WEB-HOSTING</span>
             <span
               >A card is a flexible and extensible content container. It
               includes options for headers and footers, a wide variety of
@@ -188,7 +210,7 @@
           </div>
           <div class="col-md-4 px-5 my-5">
             <h4 class="fas fa-headphones"></h4>
-            <h4>ONLINE SUPPORT</h4>
+            <span class="h5 d-block montserrat-600">ONLINE SUPPORT</span>
             <span
               >A card is a flexible and extensible content container. It
               includes options for headers and footers, a wide variety of
@@ -198,7 +220,7 @@
           </div>
           <div class="col-md-4 px-5 my-5">
             <h4 class="fas fa-bug"></h4>
-            <h4>FIX SERVER ERROR</h4>
+            <span class="h5 d-block montserrat-600">FIX SERVER ERROR</span>
             <span
               >A card is a flexible and extensible content container. It
               includes options for headers and footers, a wide variety of
@@ -210,8 +232,10 @@
       </div>
 
       <div class="project-banner text-white py-5 row text-center">
-        <div class="col">
-          <h2>Let's Work Together!</h2>
+        <div class="col py-4">
+          <span class="h4 d-block montserrat-500 letter-spacing-1"
+            >Let's Work Together!</span
+          >
           <span>You can start working with us by clicking below.</span
           ><br /><button class="btn color-green border-green rounded-0">
             Start Project
@@ -226,7 +250,7 @@
       <div class="container my-5 py-5">
         <div class="row text-center">
           <div class="col">
-            <span class="font-weight-bolder h1 d-block">TEAM MEMBER</span>
+            <span class="h3 mb-0 montserrat-600 d-block">TEAM MEMBER</span>
             <span
               >This is a discription of main heading, you can write whaterver
               you want.</span
@@ -234,66 +258,67 @@
           </div>
         </div>
         <div class="row team-div text-center">
-          <div class="col-md-3 my-5">
+          <div class="col-md-3 my-4">
             <div class="team-card p-3">
-              <img
-                src="img/men-min.jpg"
-                class="rounded-circle"
-                alt="member1"
-                srcset=""
-              />
+              <img src="img/men-min.jpg" class="rounded-circle" alt="member1" />
               <div class="team-card-body pt-3">
-                <span class="font-weight-bold h5">SHISIR IMRAN</span>
-                <h6>CEO</h6>
-                <span class="fab border p-2 mx-1 fa-facebook-f"></span>
-                <span class="fab border p-2 mx-1 fa-twitter"></span>
-                <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                <span class="montserrat-700 h6 d-block mb-0">SHISIR IMRAN</span>
+                <span class="d-block small">CEO</span>
+                <div class="my-1">
+                  <span class="fab border p-2 mx-1 fa-facebook-f"></span>
+                  <span class="fab border p-2 mx-1 fa-twitter"></span>
+                  <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 my-5">
+          <div class="col-md-3 my-4">
             <div class="team-card p-3">
               <img
                 src="img/women-min.jpg"
-                loading="lazy"
                 class="rounded-circle"
                 alt="member2"
               />
               <div class="team-card-body pt-3">
-                <span class="font-weight-bold h5">SADIA AFRIN</span>
-                <h6>DESIGNER</h6>
-                <span class="fab border p-2 mx-1 fa-facebook-f"></span>
-                <span class="fab border p-2 mx-1 fa-twitter"></span>
-                <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                <span class="montserrat-700 h6 d-block mb-0">SADIA AFRIN</span>
+                <span class="d-block small">DESIGNER</span>
+                <div class="my-1">
+                  <span class="fab border p-2 mx-1 fa-facebook-f"></span>
+                  <span class="fab border p-2 mx-1 fa-twitter"></span>
+                  <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 my-5">
+          <div class="col-md-3 my-4">
             <div class="team-card p-3">
               <img src="img/men-min.jpg" class="rounded-circle" alt="member3" />
               <div class="team-card-body pt-3">
-                <span class="font-weight-bold h5">JOHN DOE</span>
-                <h6>DEVELOPER</h6>
-                <span class="fab border p-2 mx-1 fa-facebook-f"></span>
-                <span class="fab border p-2 mx-1 fa-twitter"></span>
-                <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                <span class="montserrat-700 h6 d-block mb-0">JOHN DOE</span>
+                <span class="d-block small">DEVELOPER</span>
+                <div class="my-1">
+                  <span class="fab border p-2 mx-1 fa-facebook-f"></span>
+                  <span class="fab border p-2 mx-1 fa-twitter"></span>
+                  <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 my-5">
+          <div class="col-md-3 my-4">
             <div class="team-card p-3">
               <img
                 src="img/women-min.jpg"
-                loading="lazy"
                 class="rounded-circle"
                 alt="member4"
               />
               <div class="team-card-body pt-3">
-                <span class="font-weight-bold h5">JOHN DOE</span>
-                <h6>DESIGNER</h6>
-                <span class="fab border p-2 mx-1 fa-facebook-f"></span>
-                <span class="fab border p-2 mx-1 fa-twitter"></span>
-                <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                <span class="montserrat-700 h6 d-block mb-0">JOHN DOE</span>
+                <span class="d-block small">DESIGNER</span>
+                <div class="my-1">
+                  <span class="fab border p-2 mx-1 fa-facebook-f"></span>
+                  <span class="fab border p-2 mx-1 fa-twitter"></span>
+                  <span class="fab border p-2 mx-1 fa-pinterest-p"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -329,10 +354,10 @@
 
     <!-- testimonial STARTS -->
     <div id="testimonialdiv" class="container-fluid py-5 my-5">
-      <div class="container text-center testimonial-div">
+      <div class="container text-center testimonial-div pb-5">
         <div class="row text-center">
           <div class="col">
-            <span class="font-weight-bolder h1 d-block">RECENT WORK</span>
+            <span class="h3 mb-0 montserrat-600 d-block">RECENT WORK</span>
             <span
               >This is a discription of main heading, you can write whaterver
               you want.</span
@@ -371,17 +396,26 @@
           <div class="col-md">
             <img src="img/gallery6-min.jpg" class="w-100" alt="gallery6" />
           </div>
+          <div class="col-md">
+            <img src="img/gallery7-min.jpg" class="w-100" alt="gallery7" />
+          </div>
+          <div class="col-md">
+            <img src="img/gallery8-min.jpg" class="w-100" alt="gallery8" />
+          </div>
+          <div class="col-md">
+            <img src="img/gallery9-min.jpg" class="w-100" alt="gallery9" />
+          </div>
         </div>
       </div>
 
       <div class="row py-5 my-5 text-center contactus-banner">
         <div class="container text-white">
           <div class="row">
-            <div class="col">
-              <h1>
+            <div class="col py-4">
+              <span class="h5 mb-0 montserrat-600 d-block">
                 <span class="color-green">WORK WITH US</span> WE PROVIDE BEST
                 SERVICE
-              </h1>
+              </span>
               <h6>
                 If you want to work with us, please click below button to
                 contact us.
@@ -395,7 +429,7 @@
       <div class="container py-5 my-5">
         <div class="row text-center">
           <div class="col">
-            <span class="font-weight-bolder h1 d-block"
+            <span class="h3 mb-0 montserrat-600 d-block"
               >WHAT OUR CLIENT SAYS</span
             >
             <span
@@ -614,11 +648,14 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <video width="100%" height="250px" controls preload="none">
-            <source src="vid/about-video.mp4" type="video/mp4" />
-          </video>
+      <div class="row video-banner py-5">
+        <div class="col-12 text-white text-center py-4">
+          <span class="h5 mb-0 montserrat-500 d-block"
+            >WATCH OUR AWESOME <span class="color-green">VIDEO</span></span
+          >
+        </div>
+        <div class="col-12 py-5">
+          <i class="fa fa-play-circle fa-3x"></i>
         </div>
       </div>
     </div>
@@ -628,7 +665,7 @@
     <div id="blogdiv" class="container my-5 py-5">
       <div class="row text-center">
         <div class="col">
-          <span class="font-weight-bolder h1 d-block">LATEST NEWS</span>
+          <span class="h3 mb-0 montserrat-600 d-block">LATEST NEWS</span>
           <span
             >This is a discription of main heading, you can write whaterver you
             want.</span
@@ -640,9 +677,9 @@
           <div class="my-5 shadow news-card">
             <img src="img/news1-min.jpg" class="w-100" alt="news1" />
             <div
-              class="date bg-green p-3 text-white font-weight-bolder text-center"
+              class="date bg-green p-3 text-white font-weight-bolder text-center montserrat"
             >
-              JUNE<br />27
+              JUN<br />27
             </div>
             <div class="news-body py-4 px-4">
               <h5>Advance Web-Design</h5>
@@ -664,7 +701,7 @@
           <div class="my-5 shadow news-card">
             <img src="img/news2-min.jpg" class="w-100" alt="news1" />
             <div
-              class="date bg-green p-3 text-white font-weight-bolder text-center"
+              class="date bg-green p-3 text-white font-weight-bolder text-center montserrat"
             >
               MAY<br />07
             </div>
@@ -688,7 +725,7 @@
           <div class="my-5 shadow news-card">
             <img src="img/news3-min.jpg" class="w-100" alt="news1" />
             <div
-              class="date bg-green p-3 text-white font-weight-bolder text-center"
+              class="date bg-green p-3 text-white font-weight-bolder text-center montserrat"
             >
               NOV<br />17
             </div>
@@ -715,7 +752,7 @@
       <div class="container text-center">
         <div class="row text-center">
           <div class="col">
-            <span class="font-weight-bolder h1 d-block">SERVICE PRICE</span>
+            <span class="h3 mb-0 montserrat-600 d-block">SERVICE PRICE</span>
             <span
               >This is a discription of main heading, you can write whaterver
               you want.</span
@@ -725,10 +762,10 @@
         <div class="row my-3 pb-5 text-white">
           <div class="col-md-3 py-4">
             <div class="bg-dark-grey">
-              <h5 class="color-green py-3 m-0">BASIC</h5>
-              <h5 class="bg-green p-2 text-white">
+              <h5 class="color-green py-3 m-0 montserrat-500">BASIC</h5>
+              <span class="bg-green p-2 text-white montserrat h6 d-block">
                 <span class="fas fa-dollar-sign"></span>10 / month
-              </h5>
+              </span>
               <div class="package-feature">
                 <span class="feature-item">5GB Linux Web Space</span>
                 <span class="feature-item">5 MySQL Databases</span>
@@ -737,7 +774,7 @@
                 <span class="feature-item">24/7 Tech Support</span>
               </div>
               <div class="package-footer">
-                <button class="rounded-pill btn text-white bg-dark-grey">
+                <button class="mb-4 rounded-pill btn text-white bg-dark-grey">
                   Select Plan
                 </button>
               </div>
@@ -745,10 +782,10 @@
           </div>
           <div class="col-md-3 py-4">
             <div class="bg-dark-grey">
-              <h5 class="color-green py-3 m-0">STANDARD</h5>
-              <h5 class="bg-green p-2 text-white">
+              <h5 class="color-green py-3 m-0 montserrat-500">STANDARD</h5>
+              <span class="bg-green p-2 text-white montserrat h6 d-block">
                 <span class="fas fa-dollar-sign"></span>50 / month
-              </h5>
+              </span>
               <div class="package-feature">
                 <span class="feature-item">5GB Linux Web Space</span>
                 <span class="feature-item">5 MySQL Databases</span>
@@ -757,7 +794,7 @@
                 <span class="feature-item">24/7 Tech Support</span>
               </div>
               <div class="package-footer">
-                <button class="rounded-pill btn text-white bg-dark-grey">
+                <button class="mb-4 rounded-pill btn text-white bg-dark-grey">
                   Select Plan
                 </button>
               </div>
@@ -765,10 +802,10 @@
           </div>
           <div class="col-md-3 py-4">
             <div class="bg-dark-grey">
-              <h5 class="color-green py-3 m-0">GOLD</h5>
-              <h5 class="bg-green p-2 text-white">
+              <h5 class="color-green py-3 m-0 montserrat-500">GOLD</h5>
+              <span class="bg-green p-2 text-white montserrat h6 d-block">
                 <span class="fas fa-dollar-sign"></span>70 / month
-              </h5>
+              </span>
               <div class="package-feature">
                 <span class="feature-item">5GB Linux Web Space</span>
                 <span class="feature-item">5 MySQL Databases</span>
@@ -777,7 +814,7 @@
                 <span class="feature-item">24/7 Tech Support</span>
               </div>
               <div class="package-footer">
-                <button class="rounded-pill btn text-white bg-dark-grey">
+                <button class="mb-4 rounded-pill btn text-white bg-dark-grey">
                   Select Plan
                 </button>
               </div>
@@ -785,10 +822,10 @@
           </div>
           <div class="col-md-3 py-4">
             <div class="bg-dark-grey">
-              <h5 class="color-green py-3 m-0">PREMIUM</h5>
-              <h5 class="bg-green p-2 text-white">
+              <h5 class="color-green py-3 m-0 montserrat-500">PREMIUM</h5>
+              <span class="bg-green p-2 text-white montserrat h6 d-block">
                 <span class="fas fa-dollar-sign"></span>99 / month
-              </h5>
+              </span>
               <div class="package-feature">
                 <span class="feature-item">5GB Linux Web Space</span>
                 <span class="feature-item">5 MySQL Databases</span>
@@ -797,7 +834,7 @@
                 <span class="feature-item">24/7 Tech Support</span>
               </div>
               <div class="package-footer">
-                <button class="rounded-pill btn text-white bg-dark-grey">
+                <button class="mb-4 rounded-pill btn text-white bg-dark-grey">
                   Select Plan
                 </button>
               </div>
@@ -955,12 +992,14 @@
     </div>
 
     <div class="container-fluid quote-banner">
-      <div class="container pt-5 pb-4">
+      <div class="container py-5">
         <div class="row">
-          <div class="col-md-9 text-left text-white">
-            <h4>PROVIDING SMART LOGISTIG SOLUTION ACCROSS THE <br />WORLD</h4>
+          <div class="col-md-9 text-left text-white d-flex align-items-center">
+            <span class="h5 mb-0 montserrat-600 d-block"
+              >PROVIDING SMART LOGISTIG SOLUTION ACCROSS THE <br />WORLD</span
+            >
           </div>
-          <div class="col-md-3 text-right">
+          <div class="col-md-3 text-center text-md-right">
             <button class="btn rounded-0 border-green color-green">
               Get A Quote
             </button>
@@ -974,7 +1013,7 @@
     <div id="contactdiv" class="container py-5 my-5">
       <div class="row text-center">
         <div class="col">
-          <h1>CONTACT US</h1>
+          <span class="h3 mb-0 montserrat-600 d-block">CONTACT US</span>
           <p>Submit the below form to contact us, in case of any query.</p>
         </div>
       </div>
@@ -1059,7 +1098,9 @@
               <span class="fas fa-clock"></span> sat thu : 08am 07pm
             </div>
           </div>
-          <h5 class="py-2">FOLLOW US ON SOCIAL SITE</h5>
+          <span class="h6 mb-0 py-2 montserrat-600 d-block"
+            >FOLLOW US ON SOCIAL SITE</span
+          >
           <span class="fab fa-facebook-f"></span>
           <span class="fab fa-twitter"></span>
           <span class="fab fa-pinterest-p"></span>
@@ -1073,8 +1114,8 @@
     <div class="container-fluid bg-dark-grey text-white-50 py-3 footer-div">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-4 text-center text-md-left">
-            <span class="color-green h1">H</span>hunter
+          <div class="col-md-4 text-center montserrat text-md-left">
+            <span class="montserrat-900 color-green h1">H</span> hunter
           </div>
           <div class="col-md-4 text-center">
             <span class="fas fa-copyright"></span> All Rights Reserve
