@@ -64,8 +64,12 @@
     url("../webfonts/montserrat-v14-latin-900.svg#Montserrat") format("svg");
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Times New Roman", Times, serif !important;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -138,10 +142,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.fa-play-circle:hover {
+  color: var(--color-green);
+}
+
 .fab,
 .fas,
 .fa {
   padding: 0px 3px;
+  cursor: pointer;
 }
 
 .btn {
@@ -150,6 +159,12 @@ body {
   border-width: 2px;
   font-weight: bolder;
   padding: 10px 30px;
+}
+
+.btn:hover {
+  background-color: var(--color-green);
+  color: white;
+  border: 2px solid var(--color-green);
 }
 
 .btn:focus {
